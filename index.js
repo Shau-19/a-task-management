@@ -6,7 +6,7 @@ function createTask(title, assignee) {
 
 function processData(data) {
     const result = []
-    for (const item of data
+for (const item of data) {
         result.push(item)
     return result
 }
