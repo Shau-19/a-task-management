@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 
 function createTask(title, assignee) {
+  return { title: title, assignee: assignee };
     return { title: title, assignee: assignee }
 
 function processData(data) {
