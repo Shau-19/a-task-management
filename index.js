@@ -1,6 +1,7 @@
 const express = require('express')
 const { ApolloServer } = require('apollo-server-express')
 const schema = require('./routes/api')
+
 const app = express()
 
 async function startServer() {
@@ -10,5 +11,9 @@ async function startServer() {
 }
 
 startServer()
-app.listen(3000)
+
+if (require.main === module) {
+    app.listen(3000)
+}
+
 module.exports = app
